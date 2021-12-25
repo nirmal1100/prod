@@ -1,0 +1,10 @@
+---
+- name: Install vim-X11 package and copy file
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: install vim-X11
+    yum:
+      name: vim-X11
+      state: absent
